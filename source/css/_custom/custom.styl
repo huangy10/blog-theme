@@ -1,1 +1,100 @@
 // Custom styles.
+div#refs {
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+div#refs p {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Biaodian Pro Serif GB","Numeral LF Italic Serif","Latin Italic Serif",Georgia,"Times New Roman","Han Kaiti GB",cursive,serif;
+}
+
+body {
+  line-height: 1.7;
+}
+
+h2::before {
+  content: "❖ "
+}
+
+h3::before {
+  content: "◇ "
+}
+
+h2.post-title::before {
+  content: "📚"
+}
+
+twitter-widget {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.popover-container:hover {
+  -webkit-animation-play-state: paused;
+}
+
+.popover-container:hover .popover-content {
+  visibility: visible;
+}
+
+.popover-content {
+  width: 200px;
+  height: 100%;
+  background:rgba(255,255,255,1);
+  padding: 10px;
+  border-radius: 3px;
+  position: absolute;
+  visibility: hidden;
+  bottom: 0px;
+  left: 50%;
+  top: -10px;
+  transform: translate(-50%, -100%);
+  box-shadow:0 0 50px 0 rgba(0,0,0,.5);
+  z-index: 1000;
+}
+
+.popover-arrow {
+  position:absolute;
+  margin:10px 0 0 88px;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+.foot-note-span {
+  font-size:9.0pt;
+  color:red;
+}
+
+.foot-note-span a {
+  color: red;
+}
+
+pre {
+  font-size: 13px;
+}
+
+.post-body {
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2.post-title {
+  margin-bottom: 15px;
+}

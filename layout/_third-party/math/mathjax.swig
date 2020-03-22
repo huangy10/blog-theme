@@ -15,8 +15,17 @@
       {% endif %}
       equationNumbers: {
         autoNumber: 'AMS'
-      }
+      },
+      {% if page.mathjaxext %}
+      extensions: [{% for a in page.mathjaxext %} "{{a}}"{% if !loop.last %}, {% endif %}{% endfor %}]
+      {% endif %}
     }
+    {% if page.mathjax_compact %}
+    ,
+    "HTML-CSS": {
+      scale: 100 / 120 * 100
+    }
+    {% endif %}
   });
   MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
     MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {

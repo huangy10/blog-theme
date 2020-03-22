@@ -55,7 +55,8 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "PingFang SC", "Microsoft YaHei"
+// 去掉 "source-han-serif-sc"
+$font-family-chinese      = "Biaodian Pro Sans GB", "Helvetica Neue", Helvetica, Arial,"Han Heiti GB", "PingFang SC" 
 
 $font-family-base         = $font-family-chinese, sans-serif
 $font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global')
@@ -88,7 +89,8 @@ $font-size-base           = 14px
 $font-size-base           = unit(hexo-config('font.global.size'), px) if hexo-config('font.global.size') is a 'unit'
 $font-size-small          = $font-size-base - 2px
 $font-size-smaller        = $font-size-base - 4px
-$font-size-large          = $font-size-base + 2px
+// large的+2去掉了
+$font-size-large          = $font-size-base
 $font-size-larger         = $font-size-base + 4px
 
 

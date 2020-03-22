@@ -13,6 +13,9 @@
 {% if theme.motion.enable %}
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
+{% if theme.han %}
+  {% set html_class = html_class + ' han-js-rendered no-han-space' %}
+{% endif %}
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
@@ -122,5 +125,26 @@
   {% include '_third-party/copy-code.swig' %}
   {% include '_third-party/chatra.swig' %}
   {% include '_third-party/tidio.swig' %}
+
+  <script src="https://ethantw.github.io/Han/latest/han.min.js"></script>
+  
+  <script>
+    void function(){
+      // window.hinst = Han(document.querySelector('.post-body')).setRoutine([
+      //   'initCond',
+      //   'renderElem',
+      //   'renderJiya',
+      //   'renderHanging',
+      //   'renderHWS',
+      //   'correctBasicBD',
+      //   'substCombLigaWithPUA'
+      // ]).render()
+      const ele = document.getElementById("refs")
+      if (ele) {
+        ele.setAttribute("lang", "en_US");
+      }
+    }()
+
+    </script>
 </body>
 </html>

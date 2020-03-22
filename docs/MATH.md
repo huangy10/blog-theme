@@ -277,7 +277,7 @@ The reason that jsDelivr is chosen is because it is fast everywhere, and jsDeliv
 
 And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/).
 
-For MathJax, we are currently using version 2.7.1.
+For \, we are currently using version 2.7.1.
 
 For Katex, due to the problem described above, we are now using version 0.7.1.
 
